@@ -1,0 +1,13 @@
+{
+  "name": "chatroom-test",
+  "version": "0.0.1",
+  "description": "my first chatroom",
+  "main": "server.js",
+  "repository": "",
+  "author": "Kevin Lee",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}

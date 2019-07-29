@@ -1,0 +1,158 @@
+		*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body,html{height:100%;min-height:100%;margin:0;padding:0;}
+		html,body {
+			height: 100%;
+			min-height: 100%;
+			margin:0; padding: 0;
+			color: #F7F8FA;
+			font-family: 'Montserrat';
+			font-size: 16px; /*controls font-size: ##em values*/
+			background: -moz-linear-gradient(28deg, rgba(255,0,212,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+			background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,212,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+			background: -webkit-linear-gradient(28deg, rgba(255,0,212,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+			background: -o-linear-gradient(28deg, rgba(255,0,212,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+			background: -ms-linear-gradient(28deg, rgba(255,0,212,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+			background: linear-gradient(62deg, rgba(255,0,212,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF00D4', endColorstr='#008080',GradientType=1 ); /* ie6-9 */
+		}
+
+		h3 {
+			background-color: rgba(17,17,17, 0.8);
+			text-align: center;
+			font-size: 2.5em;
+			margin: 0;
+		}
+
+		#mainbody {
+			height: 90%;
+			width: 90%;
+
+			margin: 25px auto;
+			position: relative;
+		}
+			#left-container {
+				height: 90%;
+				width: 70%;
+				float: left;
+			}
+			#right-container {
+				height: 90%;
+				width: 25%;
+				float: right;
+				
+				border: 2px solid white;
+			}
+				#right-top-container {
+					height: 8%;
+
+				}
+					#tab-container {
+						height: 100%;
+						width: 100%;
+						background-color: #111111;
+						padding: 0;
+						margin: 0;
+						list-style-type: none;
+					}
+						.tab {
+							height: 100%;
+							width: 33.33%;
+
+							padding: 0;
+							margin: 0;
+							display: inline-block;
+						}
+							.tab:hover {
+
+							}
+						#tab-chat {
+							background: url('http://i.imgur.com/TAbgZn1.png') center center no-repeat;
+							background-size: contain;
+							text-align: left;
+						}
+						#tab-userlist {
+							background: url('http://i.imgur.com/j2uIzyr.png') center center no-repeat;
+							background-size: contain;
+							text-align: center;
+						}
+						#tab-settings {
+							background: url('http://i.imgur.com/fgR0WIc.png') center center no-repeat;
+							background-size: contain;
+							text-align: right;
+						}
+				#right-bottom-container {
+					height: 92%;
+
+					display: block;
+				}
+					#chat-container {
+						background-color: rgba(17,17,17, 1);
+						height: 100%;
+						width: 100%;
+						display: block;
+					}
+						#chat-messages {
+							list-style-type: none;
+							height: 93%;
+							width: 100%;
+							overflow-y: auto;
+							
+							margin: 0;
+							padding: 0;
+						}
+							.msg-container {
+								word-wrap: break-word;
+								margin-top: 3px;
+							}
+								.msg-username {
+									display: block;
+									font-size: 1em;
+									text-decoration: underline;
+								}
+								.msg-text {
+									font-size: 1em;
+								}
+						#input-container {
+							background-color: rgba(17,17,17, 1);
+							height: 7%;
+							width: 100%;
+							border-top: 2px solid white;
+						}
+							#chat-input, #user-input {
+								background-color: rgba(17,17,17, 1);
+								color: white;
+								height: 100%;
+								width: 100%;
+								
+								border: 0;
+								display: inline-block;
+							}
+
+					#user-container {
+						background-color: rgba(17,17,17, 1);
+						height: 100%;
+						width: 100%;
+						overflow-y: auto;
+						word-wrap: break-word;
+						
+						padding: 0;
+						margin: 0;
+					}
+						#user-list {
+							list-style-type: none;
+							height: 100%;
+							width: 100%;
+							
+							padding: 0;
+							margin: 0;
+						}
+							#user-list li {
+								height: 5%;
+								width: 100%;
+								padding: 5px 0 5px 10px;
+							}
+							#user-list li:nth-child(odd) {background-color: red;}
+							#user-list li:nth-child(even) {background-color: blue;}
+							#user-list li:nth-child(1) {background-color: orange;} /*instead of fixing the user sort, just make the user's name on top unique. Hacked!*/
+					#settings-container {
+						
+					}
